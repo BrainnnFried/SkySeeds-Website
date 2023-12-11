@@ -1,26 +1,12 @@
-<?php
-    require_once 'classes/header.php';
-    require_once 'classes/footer.php';
-
-    if (session_status() === PHP_SESSION_NONE) {
-        session_start();
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/home.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/home(backup).css" />
     <title>Document</title>
-</head>
-<body>
-    <?php
-        $header = new Header();
-        $header->createHeader();
-    ?>
-    
+  </head>
+  <body>
     <header class="headerContainer">
       <div class="headerContent">
         <h1>Rooftop Farming, Where Fresh Meets Sky!</h1>
@@ -93,12 +79,5 @@
         </button>
       </div>
     </div>
-
-    <?php
-        $footer = new Footer();
-        $footer->createFooter();
-    ?>
-
-    
-</body>
+  </body>
 </html>

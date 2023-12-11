@@ -3,49 +3,52 @@
 class Footer{
     public function createFooter(){
         $headerHtml ='
-        <header>
-            <div class="header_container">
-                <div class="logo_container">
-                    <img src="image/logo.png" class="header_logo">
-                </div>
-                <div class="nav_btns">
-                    <ul class="button_list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About US</a></li>
-                        <li>
-                            <a href="#">Product</a>
-                            <ul class="product_dropDown">
-                                <li><a href="#">product1</a></li>
-                                <li><a href="#">product2</a></li>
-                                <li><a href="#">product3</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                        <a href="#">Academy</a>
-                        <ul class="academy_dropDown">
-                            <li><a href="#">academy1</a></li>
-                            <li><a href="#">academy2</a></li>
-                            <li><a href="#">academy3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Contact US</a></li>
-                    </ul>
-                </div>
-                <div class="login">';
-                    if(isset($_SESSION['user'])){
-                        $headerHtml .= '<a href="#"><img class = "profile"src="image/user.png"></a>';
-                    }else{
-                        $headerHtml .= '<a href="#"><button class="login_button">Login</button></a>';
-                        
-                    }
-                $headerHtml .='
-                </div>
-                <div class="cart_container">
-                    <img src="image/cart.png" class="cart">
-                </div>
-            </div>
-        </header>';
-
+        <footer class="footer">
+		<div class="container row">
+			<div class = "footer-first">
+				<h1>SkySeeds</h1>
+				<p>Tellus non diam morbi quam vel venenatis proin sed. Dolor elementum nunc dictum interdum amet arcu aenean eu integer</p>
+			</div>
+			<div class="footer-col">
+				<h4>Product</h4>
+				<ul>
+					<li><a href="#">Tools</a></li>
+					<li><a href="#">Fertilisers</a></li>
+					<li><a href="#">Seeds</a></li>
+					<li><a href="#">Veggies</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Company</h4>
+				<ul>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Academy</h4>
+				<ul>
+					<li><a href="#">Home Garden</a></li>
+					<li><a href="#">School Programme</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Need Help?</h4>
+				<ul>
+					<li><a href="#">Consultation</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<div class="social-links">
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>';
+    
         echo $headerHtml;
     }
     
